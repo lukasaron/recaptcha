@@ -1,6 +1,8 @@
 # Recaptcha
 
+[![GoDoc](https://godoc.org/github.com/lukasaron/recaptcha?status.svg)](https://godoc.org/github.com/lukasaron/recaptcha)
 [![Build Status](https://travis-ci.com/lukasaron/recaptcha.svg?branch=master)](https://travis-ci.com/lukasaron/recaptcha)
+[![Go Report Card](https://goreportcard.com/badge/github.com/lukasaron/recaptcha)](https://goreportcard.com/report/github.com/lukasaron/recaptcha)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 Recaptcha defines the basic functionality for verification of Recaptcha tokens (all version) 
