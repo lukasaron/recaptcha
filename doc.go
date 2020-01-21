@@ -5,7 +5,7 @@
 // performing the basic evaluation of provided token and result is captured in the VerifyResponse structure.
 //
 // User of this library can define endpoints as the project requires. The only one required task is to define one
-// environmental variable `SECRET_KEY` which has to hold the generated secret key value.
+// environmental variable SECRET_KEY which has to hold the generated secret key value.
 //
 // Example of basic usage:
 //		package main

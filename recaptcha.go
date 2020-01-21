@@ -33,9 +33,9 @@ type VerifyResponse struct {
 // VerifyToken function implements the basic logic of verification of ReCaptcha token that is usually created
 // on the user site (front-end) and then sent to verify on the server side (back-end).
 // To provide a successful verification process the secret key is required. Based on the security recommendations
-// the key has to be passed as an environmental variable `SECRET_KEY`.
+// the key has to be passed as an environmental variable SECRET_KEY.
 //
-// `token` is required, however `remoteIP` is optional.
+// Token parameter is required, however remoteIP is optional.
 func VerifyToken(token, remoteIP string) (VerifyResponse, error) {
 	q := VerifyURL.Query()
 	q.Add("secret", os.Getenv("SECRET_KEY"))
