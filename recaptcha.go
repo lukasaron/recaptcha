@@ -19,8 +19,8 @@ var (
 	VerifyURL, _ = url.Parse("https://www.google.com/recaptcha/api/siteverify")
 )
 
-// VerifyResponse defines the response format from the verification endpoint.
-type VerifyResponse struct {
+// Response defines the response format from the verification endpoint.
+type Response struct {
 	Success            bool      `json:"success"`          // status of the verification
 	TimeStamp          time.Time `json:"challenge_ts"`     // timestamp of the challenge load (ISO format)
 	HostName           string    `json:"hostname"`         // the hostname of the site where the reCAPTCHA was solved
@@ -36,24 +36,24 @@ type VerifyResponse struct {
 // the key has to be passed as an environmental variable SECRET_KEY.
 //
 // Token parameter is required, however remoteIP is optional.
-func VerifyToken(token, remoteIP string) (VerifyResponse, error) {
+func VerifyToken(token, remoteIP string) (Response, error) {
 	q := VerifyURL.Query()
 	q.Add("secret", os.Getenv("SECRET_KEY"))
 	q.Add("response", token)
 	q.Add("remoteip", remoteIP)
 	VerifyURL.RawQuery = q.Encode()
 
-	vr := VerifyResponse{}
+	resp := Response{}
 	r, err := http.Post(VerifyURL.String(), contentType, nil)
 	if err != nil {
-		return vr, err
+		return resp, err
 	}
 
 	b, err := ioutil.ReadAll(r.Body)
 	_ = r.Body.Close() // close immediately after reading finished
 	if err != nil {
-		return vr, err
+		return resp, err
 	}
 
-	return vr, json.Unmarshal(b, &vr)
+	return resp, json.Unmarshal(b, &resp)
 }
