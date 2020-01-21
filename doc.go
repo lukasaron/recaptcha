@@ -1,5 +1,5 @@
-// Recaptcha package defines the basic functionality for verification of Recaptcha tokens generated on the
-// client site (front-end).
+// Package recaptcha defines the basic functionality for verification of Recaptcha tokens (all versions)
+// generated on the client site (front-end).
 //
 // To make this project independent to any web server there is not an executable file/script, but only the library is
 // performing the basic evaluation of provided token and result is captured in the VerifyResponse structure.
