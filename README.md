@@ -1,6 +1,10 @@
 # Recaptcha
 
-Recaptcha defines the basic functionality for verification of Recaptcha tokens generated on the client site (front-end).
+[![Build Status](https://travis-ci.com/lukasaron/recaptcha.svg?branch=master)](https://travis-ci.com/lukasaron/recaptcha)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
+Recaptcha defines the basic functionality for verification of Recaptcha tokens (all version) 
+generated on the client site (front-end).
 
 To make this project independent to any web server there is not an executable file/script, but only the library is
 performing the basic evaluation of provided token and result is captured in the VerifyResponse structure.
