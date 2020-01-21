@@ -1,11 +1,11 @@
-# Recaptcha
+# reCaptcha
 
 [![GoDoc](https://godoc.org/github.com/lukasaron/recaptcha?status.svg)](https://godoc.org/github.com/lukasaron/recaptcha)
 [![Build Status](https://travis-ci.com/lukasaron/recaptcha.svg?branch=master)](https://travis-ci.com/lukasaron/recaptcha)
 [![Go Report Card](https://goreportcard.com/badge/github.com/lukasaron/recaptcha)](https://goreportcard.com/report/github.com/lukasaron/recaptcha)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-Recaptcha defines the functionality for verification of Recaptcha tokens (all version) generated on the client site.
+reCaptcha defines the functionality for verification of reCaptcha tokens (all version) generated on the client site.
 
 To make this project independent to any web server there is not an executable file/script, but only the library is
 performing the basic evaluation of provided token and result is captured in the VerifyResponse structure.

@@ -1,4 +1,4 @@
-// Package recaptcha defines the functionality for verification of Recaptcha tokens (all versions)
+// Package recaptcha defines the functionality for verification of reCaptcha tokens (all versions)
 // generated on the client site.
 //
 // To make this project independent to any web server there is not an executable file/script, but only the library is
