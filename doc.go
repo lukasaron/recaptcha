@@ -16,7 +16,7 @@
 //		)
 //
 //		func main() {
-//			token := "--- accept the token from the client side--- "
+//			token := "--- accept the token from the client side and pass it here --- "
 //			remoteIP := "--- fill the remote IP or leave empty --- "
 //			r, err := recaptcha.VerifyToken(token, remoteIP)
 //			fmt.Printf("Response: %+v\n, error: %v", r, err)
